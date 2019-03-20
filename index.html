@@ -31,7 +31,7 @@
         Each time when the game starts, the game will change the value of each crystal
     </p>   
     <br>
-    <div>
+    <div class="counters">
         <!-- Score counter -->
         <h3>Score: <span id="score"></span></h3>
         <!-- Target number -->
@@ -41,12 +41,14 @@
         <!-- Loss counters -->
         <h3>Losses: <span id="losses"></span></h3>
     </div>
+    <br>
     <!-- Crystal buttons -->
-    <button id="crystal1" value=><img alt="crystal"></button>  
-    <button id="crystal2" value=><img alt="crystal"></button>  
-    <button id="crystal3" value=><img alt="crystal"></button>  
-    <button id="crystal4" value=><img alt="crystal"></button>  
-
+    <div class="crystalContainer">
+        <button id="crystal1" value=><img class="crystal" src="assets/javascript/images/crystal1.jpg" alt="crystal"></button>  
+        <button id="crystal2" value=><img class="crystal" src="assets/javascript/images/crystal2.jpg" alt="crystal"></button>  
+        <button id="crystal3" value=><img class="crystal" src="assets/javascript/images/crystal3.jpg" alt="crystal"></button>  
+        <button id="crystal4" value=><img class="crystal" src="assets/javascript/images/crystal4.jpg" alt="crystal"></button>  
+    </div>
 
     <script src="assets/javascript/game.js" href="assets/javascript/game.js"></script>
 </body>
