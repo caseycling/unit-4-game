@@ -1,6 +1,19 @@
 
+#mainSpace {
+    background-color:  antiquewhite;
+    text-align: center;
+    margin: 35px 110px 35px 110px;
+    border: solid 1px black;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
 .crystal {
     height: 200px;
     width: 150px;
     object-fit: contain;
+}
+
+p {
+    font-size: 15pt;
 }

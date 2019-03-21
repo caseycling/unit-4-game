@@ -10,47 +10,49 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-<!-- jQuery library -->
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 
 </head>
 <body>
-    <h1>Crystal Collector!</h1>
-    <br>
-    <!-- Instructions -->
-    <p>You will be given a random number at the start of the game
+    <div id="mainSpace">
+        <h1>Crystal Collector!</h1>
         <br>
-        There are four crystals below. By clicking on a crystal, you will
-        add a specific amount of points to your total score.
+        <!-- Instructions -->
+        <p>You will be given a random number at the start of the game
+            <br>
+            There are four crystals below. By clicking on a crystal, you will
+            add a specific amount of points to your total score.
+            <br>
+            You win the game by matching your total score to random number, you 
+            lose the game if your score goes above the random number.
+            <br>
+            The value of each crystal is hidden from you until you click on it.
+            <br>
+            Each time when the game starts, the game will change the value of each crystal
+        </p>   
+        <div class="counters">
+            <!-- Score counter -->
+            <h3>Score: <span id="score"></span></h3>
+            <!-- Target number -->
+            <h3>Number: <span id="number"></span></h3>
+            <!-- Win counters -->
+            <h3>Wins: <span id="wins"></span></h3> 
+            <!-- Loss counters -->
+            <h3>Losses: <span id="losses"></span></h3>
+        </div>
         <br>
-        You win the game by matching your total score to random number, you 
-        lose the game if your score goes above the random number.
-        <br>
-        The value of each crystal is hidden from you until you click on it.
-        <br>
-        Each time when the game starts, the game will change the value of each crystal
-    </p>   
-    <br>
-    <div class="counters">
-        <!-- Score counter -->
-        <h3>Score: <span id="score"></span></h3>
-        <!-- Target number -->
-        <h3>Number: <span id="number"></span></h3>
-        <!-- Win counters -->
-        <h3>Wins: <span id="wins"></span></h3> 
-        <!-- Loss counters -->
-        <h3>Losses: <span id="losses"></span></h3>
-    </div>
-    <br>
-    <!-- Crystal buttons -->
-    <div class="crystalContainer">
-        <button id="crystal1" value=><img class="crystal" src="assets/javascript/images/crystal1.jpg" alt="crystal"></button>  
-        <button id="crystal2" value=><img class="crystal" src="assets/javascript/images/crystal2.jpg" alt="crystal"></button>  
-        <button id="crystal3" value=><img class="crystal" src="assets/javascript/images/crystal3.jpg" alt="crystal"></button>  
-        <button id="crystal4" value=><img class="crystal" src="assets/javascript/images/crystal4.jpg" alt="crystal"></button>  
-    </div>
+        <!-- Crystal buttons -->
+        <div class="crystalContainer">
+            <button id="crystal1" value=><img class="crystal" src="assets/javascript/images/crystal1.jpg" alt="crystal"></button>  
+            <button id="crystal2" value=><img class="crystal" src="assets/javascript/images/crystal2.jpg" alt="crystal"></button>  
+            <button id="crystal3" value=><img class="crystal" src="assets/javascript/images/crystal3.jpg" alt="crystal"></button>  
+            <button id="crystal4" value=><img class="crystal" src="assets/javascript/images/crystal4.jpg" alt="crystal"></button>  
+        </div>
 
-    <script src="assets/javascript/game.js" href="assets/javascript/game.js"></script>
+        <script src="assets/javascript/game.js" href="assets/javascript/game.js"></script>
+    </div>
 </body>
 
 </html>
